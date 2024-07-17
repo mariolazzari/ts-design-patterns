@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "abstraction": "tsnd --respawn 02_oop/abstraction",
     "classes": "tsnd --respawn 02_oop/classes"
   },
   "keywords": [],

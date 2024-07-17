@@ -16,9 +16,16 @@ OOP uses objects in order to structure and organize code.
 
 ### Abstraction
 
-Process of simplifyng complex systems by breaking them into smaller components. 
+Process of simplifyng complex systems by breaking them into smaller components, by exposing only essential features to user (implementation hidding).
+
+- class: blueprint for object creation
+- interface: enforce class structure
+
+ex: [TypeORM](https://typeorm.io/) 
 
 ### Encapsulation
+
+
 
 ### 
 
