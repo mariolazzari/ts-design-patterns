@@ -6,7 +6,8 @@
   "scripts": {
     "abstraction": "tsnd --respawn 02_oop/abstraction",
     "classes": "tsnd --respawn 02_oop/classes",
-    "encapsulation": "tsnd --respawn 02_oop/encapsulation"
+    "encapsulation": "tsnd --respawn 02_oop/encapsulation",
+    "inheritance": "tsnd --respawn 02_oop/inheritance"
   },
   "keywords": [],
   "author": "Mario Lazzari",

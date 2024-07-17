@@ -27,9 +27,19 @@ ex: [TypeORM](https://typeorm.io/)
 
 Promotes separation of concerns and data hiding.
 
+### Polymorphism 
 
+It enables a single interface or method to work with different types.
 
-### 
+- Parameters
+- Generics
+- Ad hoc
+
+ex: [ExpressJS](https://expressjs.com/)
+
+### Inheritance
+
+Allows to inherit attributes and methods from another class, promoting reusability and modularity.
 
 ## SOLID design principles
 
