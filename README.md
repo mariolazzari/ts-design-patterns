@@ -25,6 +25,8 @@ ex: [TypeORM](https://typeorm.io/)
 
 ### Encapsulation
 
+Promotes separation of concerns and data hiding.
+
 
 
 ### 
