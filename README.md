@@ -43,7 +43,25 @@ Allows to inherit attributes and methods from another class, promoting reusabili
 
 ## SOLID design principles
 
+### Intro
+
+Foundation for design patterns basing on following principle:
+
+- Single responsability 
+- Open closed
+- Liskov substution
+- Interface segregation
+- Dependency inversion
+
+### Single responsibility
+
+Minimize impact on changing by isolating it.
+A class must bing one only responsability.
+
+
 ## Creational design patterns
+
+
 
 ## Structural design patterns
 
