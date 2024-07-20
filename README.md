@@ -67,6 +67,12 @@ Classes, functions and interfaces must be open for extension, but closed for mod
 - simpler update process
 - simpler patching
 
+### Liskov substitution
+
+Is S extends T, objects of type T can be replaced with objects of type S, without altering any properties.
+
+- Code reusability
+- More robustness
 
 ## Creational design patterns
 
