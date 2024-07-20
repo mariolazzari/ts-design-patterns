@@ -7,7 +7,8 @@
     "abstraction": "tsnd --respawn 02_oop/abstraction",
     "classes": "tsnd --respawn 02_oop/classes",
     "encapsulation": "tsnd --respawn 02_oop/encapsulation",
-    "inheritance": "tsnd --respawn 02_oop/inheritance"
+    "inheritance": "tsnd --respawn 02_oop/inheritance",
+    "open-close": "tsnd --respawn 03_solid/open-close.ts"
   },
   "keywords": [],
   "author": "Mario Lazzari",

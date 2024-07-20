@@ -58,6 +58,15 @@ Foundation for design patterns basing on following principle:
 Minimize impact on changing by isolating it.
 A class must bing one only responsability.
 
+### Open close
+
+Classes, functions and interfaces must be open for extension, but closed for modification.
+
+- increase reusability
+- decrease bugs
+- simpler update process
+- simpler patching
+
 
 ## Creational design patterns
 
