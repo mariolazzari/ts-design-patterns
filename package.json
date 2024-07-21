@@ -6,6 +6,7 @@
   "scripts": {
     "abstraction": "tsnd --respawn 02_oop/abstraction",
     "classes": "tsnd --respawn 02_oop/classes",
+    "dep-inv": "tsnd --respawn 03_solid/dependency-inversion",
     "encapsulation": "tsnd --respawn 02_oop/encapsulation",
     "inheritance": "tsnd --respawn 02_oop/inheritance",
     "liskov": "tsnd --respawn 03_solid/liskov.ts",

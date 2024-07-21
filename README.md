@@ -74,6 +74,25 @@ Is S extends T, objects of type T can be replaced with objects of type S, withou
 - Code reusability
 - More robustness
 
+### Interface segregation
+
+No client should depend on interfaces they do not use. 
+Do not add methods to existing interface: create new interface.
+
+- Improve encapsulation
+- Reduced impact on changes
+
+### Dependency inversion
+
+High level module should not depend on low level module.
+Abstraction should not depends on detail.
+
+- Code reusability
+- Scalability 
+- Decoupling
+
+
+
 ## Creational design patterns
 
 
