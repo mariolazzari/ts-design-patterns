@@ -95,6 +95,42 @@ Abstraction should not depends on detail.
 
 ## Creational design patterns
 
+Objects creation mechanisms in order to control object creation process.
+
+### Singleton
+
+A class has only one instance, with a global access point to this instance. 
+
+- File access
+- Performance
+- Configuration
+- Thred safety
+
+#### Caveats
+
+- Global state
+- Testing
+- Subclassing
+
+#### Use cases
+
+- Caching
+- Service Proxies
+- Shared resources (DB connections)
+- Configuration settings
+- Logging
+
+### Prototype 
+
+
+
+### Factory
+
+### Abstract factory
+
+### Builder
+
+
 
 
 ## Structural design patterns

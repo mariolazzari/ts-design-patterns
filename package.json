@@ -10,7 +10,8 @@
     "encapsulation": "tsnd --respawn 02_oop/encapsulation",
     "inheritance": "tsnd --respawn 02_oop/inheritance",
     "liskov": "tsnd --respawn 03_solid/liskov.ts",
-    "open-close": "tsnd --respawn 03_solid/open-close.ts"
+    "open-close": "tsnd --respawn 03_solid/open-close.ts",
+    "singleton": "tsnd --respawn 04_creational/singleton.ts"
   },
   "keywords": [],
   "author": "Mario Lazzari",
