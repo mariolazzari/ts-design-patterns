@@ -101,6 +101,8 @@ Objects creation mechanisms in order to control object creation process.
 
 A class has only one instance, with a global access point to this instance. 
 
+#### When to use
+
 - File access
 - Performance
 - Configuration
@@ -122,13 +124,40 @@ A class has only one instance, with a global access point to this instance.
 
 ### Prototype 
 
+Clone objects of any complexity without coupling.
+
+#### When to use
+
+- Complex objects creation
+- High cost object creation
+- Similar objects
+- Dynamic typing 
+- Prevent object history
+
+#### Pros
+
+- Avoid reference errors
+- Efficent cloning
+- Runtime modifications
+- Simpler object creation
+
+#### Cons
+
+- Shallow vs Deep copying
+
+#### Use cases
+
+- Graphic editors
+- Gamining
+- Database replica
+
+### Builder
 
 
 ### Factory
 
 ### Abstract factory
 
-### Builder
 
 
 
