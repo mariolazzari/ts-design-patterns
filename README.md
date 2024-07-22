@@ -153,6 +153,15 @@ Clone objects of any complexity without coupling.
 
 ### Builder
 
+Build complex objecys *step by step*. 
+Building code is usually contained in Director class.
+
+#### Use cases
+
+- Complex object creation
+- Step by step creation
+- Combination explosion
+- Immutable objects
 
 ### Factory
 
