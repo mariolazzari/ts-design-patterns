@@ -163,6 +163,18 @@ Building code is usually contained in Director class.
 - Combination explosion
 - Immutable objects
 
+#### Pros
+
+- Fluent interface
+- Separation of logic
+- Multiple versions
+
+#### Cons
+
+- Complexity
+- Additional code
+- Runtime errors
+
 ### Factory
 
 ### Abstract factory

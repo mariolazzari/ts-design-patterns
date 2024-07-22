@@ -78,3 +78,80 @@ console.log("Min", minProd);
 dir.buildFullProd();
 const fullProd = builder.getProduct();
 console.log("Full", fullProd);
+
+// Real example
+interface ICustomer {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+}
+
+interface ICustomerBuilder {
+  setFirstName(firstName: string): ICustomerBuilder;
+  setLastName(lastName: string): ICustomerBuilder;
+  setEmail(email: string): ICustomerBuilder;
+  setPhone(phone: string): ICustomerBuilder;
+  build(): ICustomer;
+}
+
+class Customer implements ICustomer {
+  constructor(
+    public firstName: string,
+    public lastName: string,
+    public email: string,
+    public phone: string
+  ) {}
+}
+
+class CustomerBuilder implements ICustomerBuilder {
+  private firstName = "";
+  private lastName = "";
+  private email = "";
+  private phone = "";
+
+  setFirstName(firstName: string): ICustomerBuilder {
+    this.firstName = firstName;
+    return this;
+  }
+
+  setLastName(lastName: string): ICustomerBuilder {
+    this.lastName = lastName;
+    return this;
+  }
+
+  setEmail(email: string): ICustomerBuilder {
+    this.email = email;
+    return this;
+  }
+
+  setPhone(phone: string): ICustomerBuilder {
+    this.phone = phone;
+    return this;
+  }
+
+  build(): ICustomer {
+    return new Customer(this.firstName, this.lastName, this.email, this.phone);
+  }
+}
+
+class CustomerDirector {
+  constructor(private builder: ICustomerBuilder) {}
+
+  buildMinCustomer(firstName: string, lastName: string, email: string) {
+    return this.builder
+      .setFirstName(firstName)
+      .setLastName(lastName)
+      .setEmail(email)
+      .build();
+  }
+}
+
+const custBuilder: ICustomerBuilder = new CustomerBuilder();
+const custDir: CustomerDirector = new CustomerDirector(custBuilder);
+const minCust: ICustomer = custDir.buildMinCustomer(
+  "Mario",
+  "Lazzari",
+  "mario.lazzari@gmail.com"
+);
+console.log(minCust);
