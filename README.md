@@ -177,6 +177,10 @@ Building code is usually contained in Director class.
 
 ### Factory
 
+Interface for creating objects in a superclass, but allows subclasses to modify created objects.
+
+
+
 ### Abstract factory
 
 
