@@ -179,7 +179,11 @@ Building code is usually contained in Director class.
 
 Interface for creating objects in a superclass, but allows subclasses to modify created objects.
 
+#### Use cases
 
+- Uncertian types
+- Similar types
+- Flexibility
 
 ### Abstract factory
 
