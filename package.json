@@ -9,6 +9,7 @@
     "classes": "tsnd --respawn 02_oop/classes",
     "dep-inv": "tsnd --respawn 03_solid/dependency-inversion",
     "encapsulation": "tsnd --respawn 02_oop/encapsulation",
+    "factory": "tsnd --respawn 04_creational/factory.ts",
     "inheritance": "tsnd --respawn 02_oop/inheritance",
     "liskov": "tsnd --respawn 03_solid/liskov.ts",
     "open-close": "tsnd --respawn 03_solid/open-close.ts",
