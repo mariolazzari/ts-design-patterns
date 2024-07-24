@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "abstraction": "tsnd --respawn 02_oop/abstraction",
+    "abstract-factory": "tsnd --respawn 04_creational/abstract-factory",
     "builder": "tsnd --respawn 04_creational/builder.ts",
     "classes": "tsnd --respawn 02_oop/classes",
     "dep-inv": "tsnd --respawn 03_solid/dependency-inversion",

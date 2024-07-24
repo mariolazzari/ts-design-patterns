@@ -206,9 +206,28 @@ Interface for creating objects in a superclass, but allows subclasses to modify 
 
 ### Abstract factory
 
+Interface for creating families or dependant objects without concrete class.
 
+#### Use cases
 
+- Create families of objects
+- One only factory for more dependant objects
 
+#### Pros
+
+- Consistency
+- No concrete class
+- Reusability
+- SRP
+- OCP
+
+#### Cons
+
+- Complexity
+- Maintenance
+- Dependency
+- Unit testing
+- Tight coupling
 
 ## Structural design patterns
 
