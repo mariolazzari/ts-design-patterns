@@ -185,6 +185,25 @@ Interface for creating objects in a superclass, but allows subclasses to modify 
 - Similar types
 - Flexibility
 
+#### Pros
+
+- Decoupling
+- Flexibility
+- Encapsulation
+
+#### Cons
+
+- Complexity
+- Refactoring
+- Number of classes 
+- Complex testing
+
+#### Real world scenarios
+
+- Database connections
+- UI libraries
+
+
 ### Abstract factory
 
 

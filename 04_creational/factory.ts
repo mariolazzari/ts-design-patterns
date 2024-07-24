@@ -49,3 +49,53 @@ sedan.displayInfo();
 
 const suv = carFactory.createCar("suv", "Rav4", 2022);
 suv.displayInfo();
+
+// Example
+
+abstract class PaymentProcessor {
+  constructor(public amount: number) {}
+
+  abstract processPayment(): void;
+}
+
+class PayPall extends PaymentProcessor {
+  processPayment(): void {
+    console.log(`PayPall amount: ${this.amount}`);
+  }
+}
+
+class Stripe extends PaymentProcessor {
+  processPayment(): void {
+    console.log(`Stripe amount: ${this.amount}`);
+  }
+}
+
+class Bank extends PaymentProcessor {
+  processPayment(): void {
+    console.log(`Bank amount: ${this.amount}`);
+  }
+}
+
+type PaymentType = "paypall" | "stripe" | "bank";
+
+class PaymentFactory {
+  createPayment(type: PaymentType, amount: number): PaymentProcessor {
+    switch (type) {
+      case "paypall":
+        return new PayPall(amount);
+
+      case "stripe":
+        return new Stripe(amount);
+
+      case "bank":
+        return new Bank(amount);
+
+      default:
+        throw new Error("Invalid payment processor");
+    }
+  }
+}
+
+const payment = new PaymentFactory();
+const paypall = payment.createPayment("paypall", 100);
+paypall.processPayment();
