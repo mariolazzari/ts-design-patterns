@@ -229,6 +229,32 @@ Interface for creating families or dependant objects without concrete class.
 - Unit testing
 - Tight coupling
 
+#### Real world example
+
+- GUI libraries
+- Databases
+- Cross platform requirements
+
 ## Structural design patterns
+
+Objects composition and classes structure, changes isolation and flexible maintenance.
+
+### Facade
+
+Wrapper interface over a complex system. A single class (facade) with simplified methods calling system classes.
+
+#### When
+
+
+
+### Adapter 
+
+### Bridge
+
+### Composite
+
+### Decorator
+
+
 
 ## Behavioural design patterns
