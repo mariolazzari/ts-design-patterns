@@ -245,7 +245,19 @@ Wrapper interface over a complex system. A single class (facade) with simplified
 
 #### When
 
+- Rampant dependencies
+- Complexity of relashionship between classes
+- Overexpose of inner code
+- Layered architecture
+- Simplified API
 
+#### Pros
+
+- Simple API
+- Reduced dependencies
+- Decoupling
+- Easier to use
+- Promote layering
 
 ### Adapter 
 
