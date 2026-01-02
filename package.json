@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "abstraction": "tsnd --respawn 02_oop/abstraction",
+    "abstraction": "tsx --watch 02_oop/abstraction",
     "abstract-factory": "tsnd --respawn 04_creational/abstract-factory",
     "builder": "tsnd --respawn 04_creational/builder.ts",
     "classes": "tsnd --respawn 02_oop/classes",
@@ -22,7 +22,7 @@
   "author": "Mario Lazzari",
   "license": "ISC",
   "devDependencies": {
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.5.3"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }

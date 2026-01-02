@@ -1,12 +1,23 @@
 # TypeScript Design Patterns
 
+[Github](https://github.com/manikbajaj/typescript-design-patterns)
+[Notes](https://cloudaffle.com/series/typescript-design-patterns/what-are-design-patterns/)
+
 ## Intro
+
+### What are design patterns
 
 Design patterns are reusable solutions to common problems.
 
 - Tested soltutions
 - Better comunication
 - Best practices
+
+### Design patttern types
+
+- Creational: object creation
+- Structural: composition on objects
+- Behavioral: comunication between objects
 
 ## OOP
 
@@ -21,13 +32,13 @@ Process of simplifyng complex systems by breaking them into smaller components, 
 - class: blueprint for object creation
 - interface: enforce class structure
 
-ex: [TypeORM](https://typeorm.io/) 
+ex: [TypeORM](https://typeorm.io/)
 
 ### Encapsulation
 
 Promotes separation of concerns and data hiding.
 
-### Polymorphism 
+### Polymorphism
 
 It enables a single interface or method to work with different types.
 
@@ -47,7 +58,7 @@ Allows to inherit attributes and methods from another class, promoting reusabili
 
 Foundation for design patterns basing on following principle:
 
-- Single responsability 
+- Single responsability
 - Open closed
 - Liskov substution
 - Interface segregation
@@ -56,7 +67,7 @@ Foundation for design patterns basing on following principle:
 ### Single responsibility
 
 Minimize impact on changing by isolating it.
-A class must bing one only responsability.
+A class must bring one only responsability.
 
 ### Open close
 
@@ -76,7 +87,7 @@ Is S extends T, objects of type T can be replaced with objects of type S, withou
 
 ### Interface segregation
 
-No client should depend on interfaces they do not use. 
+No client should depend on interfaces they do not use.
 Do not add methods to existing interface: create new interface.
 
 - Improve encapsulation
@@ -88,10 +99,8 @@ High level module should not depend on low level module.
 Abstraction should not depends on detail.
 
 - Code reusability
-- Scalability 
+- Scalability
 - Decoupling
-
-
 
 ## Creational design patterns
 
@@ -99,7 +108,7 @@ Objects creation mechanisms in order to control object creation process.
 
 ### Singleton
 
-A class has only one instance, with a global access point to this instance. 
+A class has only one instance, with a global access point to this instance.
 
 #### When to use
 
@@ -122,7 +131,7 @@ A class has only one instance, with a global access point to this instance.
 - Configuration settings
 - Logging
 
-### Prototype 
+### Prototype
 
 Clone objects of any complexity without coupling.
 
@@ -131,7 +140,7 @@ Clone objects of any complexity without coupling.
 - Complex objects creation
 - High cost object creation
 - Similar objects
-- Dynamic typing 
+- Dynamic typing
 - Prevent object history
 
 #### Pros
@@ -153,7 +162,7 @@ Clone objects of any complexity without coupling.
 
 ### Builder
 
-Build complex objecys *step by step*. 
+Build complex objecys _step by step_.
 Building code is usually contained in Director class.
 
 #### Use cases
@@ -195,14 +204,13 @@ Interface for creating objects in a superclass, but allows subclasses to modify 
 
 - Complexity
 - Refactoring
-- Number of classes 
+- Number of classes
 - Complex testing
 
 #### Real world scenarios
 
 - Database connections
 - UI libraries
-
 
 ### Abstract factory
 
@@ -259,14 +267,12 @@ Wrapper interface over a complex system. A single class (facade) with simplified
 - Easier to use
 - Promote layering
 
-### Adapter 
+### Adapter
 
 ### Bridge
 
 ### Composite
 
 ### Decorator
-
-
 
 ## Behavioural design patterns

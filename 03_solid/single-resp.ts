@@ -19,9 +19,7 @@ class BlogPost {
   }
 
   createPost() {}
-
   updatePost() {}
-
   deletePost() {}
 
   //   displayPost() {
