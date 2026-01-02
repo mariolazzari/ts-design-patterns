@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Book, Dog, Electronic } from "./22-inheritance";
+import { Book, Dog, Electronic } from "./022-inheritance";
 
 describe("Inheritance", () => {
   const myDog = new Dog();
