@@ -34,6 +34,45 @@ Process of simplifyng complex systems by breaking them into smaller components, 
 
 ex: [TypeORM](https://typeorm.io/)
 
+```ts
+interface Shape {
+  area(): number;
+  perimeter(): number;
+}
+
+class Circle implements Shape {
+  constructor(private radius: number) {}
+
+  area(): number {
+    return this.radius ** 2 * Math.PI;
+  }
+
+  perimeter(): number {
+    return 2 * this.radius * Math.PI;
+  }
+}
+
+class Rectangle implements Shape {
+  constructor(private width: number, private height: number) {}
+
+  area(): number {
+    return this.height * this.width;
+  }
+
+  perimeter(): number {
+    return 2 * (this.height + this.width);
+  }
+}
+
+function computeArea(shape: Shape) {
+  return shape.area();
+}
+
+function computePerimeter(shape: Shape) {
+  return shape.perimeter();
+}
+```
+
 ### Encapsulation
 
 Promotes separation of concerns and data hiding.

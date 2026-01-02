@@ -4,25 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "abstraction": "tsx --watch 02_oop/abstraction",
-    "abstract-factory": "tsnd --respawn 04_creational/abstract-factory",
-    "builder": "tsnd --respawn 04_creational/builder.ts",
-    "classes": "tsnd --respawn 02_oop/classes",
-    "dep-inv": "tsnd --respawn 03_solid/dependency-inversion",
-    "encapsulation": "tsnd --respawn 02_oop/encapsulation",
-    "facade": "tsnd --respawn 05_structural/facade.ts",
-    "factory": "tsnd --respawn 04_creational/factory.ts",
-    "inheritance": "tsnd --respawn 02_oop/inheritance",
-    "liskov": "tsnd --respawn 03_solid/liskov.ts",
-    "open-close": "tsnd --respawn 03_solid/open-close.ts",
-    "prototype": "tsnd --respawn 04_creational/prototype.ts",
-    "singleton": "tsnd --respawn 04_creational/singleton.ts"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Mario Lazzari",
   "license": "ISC",
   "devDependencies": {
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   }
 }
