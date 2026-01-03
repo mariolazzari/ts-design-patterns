@@ -248,7 +248,7 @@ class BlogPostDisplay {
 
 ### Open close
 
-Classes, functions and interfaces must be open for extension, but closed for modification.
+Classes, functions and interfaces must be _open for extension_, but _closed for modification_.
 
 - increase reusability
 - decrease bugs

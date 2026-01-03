@@ -1,9 +1,9 @@
-interface Customer {
+export interface Customer {
   giveDiscount(): number;
   addLoyaltyPoints(amount: number): number;
 }
 
-class RegularCustomer implements Customer {
+export class RegularCustomer implements Customer {
   giveDiscount(): number {
     return 10;
   }
@@ -13,7 +13,7 @@ class RegularCustomer implements Customer {
   }
 }
 
-class PremiumCustomer implements Customer {
+export class PremiumCustomer implements Customer {
   giveDiscount(): number {
     return 20;
   }
@@ -23,7 +23,7 @@ class PremiumCustomer implements Customer {
   }
 }
 
-class GoldCustomer implements Customer {
+export class GoldCustomer implements Customer {
   giveDiscount(): number {
     return 30;
   }
@@ -33,15 +33,8 @@ class GoldCustomer implements Customer {
   }
 }
 
-class Discount {
+export class Discount {
   giveDiscount(customer: Customer) {
     return customer.giveDiscount();
   }
 }
-
-let customer = new PremiumCustomer();
-let discount = new Discount();
-console.log("Premium discount:", discount.giveDiscount(customer));
-
-customer = new RegularCustomer();
-console.log("Regular discount:", discount.giveDiscount(customer));
