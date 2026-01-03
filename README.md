@@ -256,7 +256,46 @@ Classes, functions and interfaces must be _open for extension_, but _closed for 
 - simpler patching
 
 ```ts
+export interface Customer {
+  giveDiscount(): number;
+  addLoyaltyPoints(amount: number): number;
+}
 
+export class RegularCustomer implements Customer {
+  giveDiscount(): number {
+    return 10;
+  }
+
+  addLoyaltyPoints(amount: number): number {
+    return amount;
+  }
+}
+
+export class PremiumCustomer implements Customer {
+  giveDiscount(): number {
+    return 20;
+  }
+
+  addLoyaltyPoints(amount: number): number {
+    return amount * 2;
+  }
+}
+
+export class GoldCustomer implements Customer {
+  giveDiscount(): number {
+    return 30;
+  }
+
+  addLoyaltyPoints(amount: number): number {
+    return amount * 3;
+  }
+}
+
+export class Discount {
+  giveDiscount(customer: Customer) {
+    return customer.giveDiscount();
+  }
+}
 ```
 
 ### Liskov substitution
@@ -265,6 +304,56 @@ Is S extends T, objects of type T can be replaced with objects of type S, withou
 
 - Code reusability
 - More robustness
+
+```ts
+export class Bird {
+  fly(): string {
+    return "Bird is flying";
+  }
+}
+
+class FlightLessBird extends Bird {
+  fly(): string {
+    return "Flightless birds cannot fly";
+  }
+}
+
+export class Penguin extends FlightLessBird {
+  // override
+  //   fly(): never {
+  //     throw new Error("Penguins cannot fly");
+  //   }
+}
+
+abstract class PaymentProcess {
+  abstract processPayment(amount: number): string;
+}
+
+export class CreditCardProcessor extends PaymentProcess {
+  processPayment(amount: number): string {
+    return `Processing credit card payment ${amount}`;
+  }
+}
+
+export class DebitCardProcessor extends PaymentProcess {
+  processPayment(amount: number): string {
+    return `Processing debit card payment ${amount}`;
+  }
+}
+
+export class PayPallProcessor extends PaymentProcess {
+  processPayment(amount: number): string {
+    return `Processing paypall card payment ${amount}`;
+  }
+}
+
+export function executePayment(
+  process: PaymentProcess,
+  amount: number
+): string {
+  return process.processPayment(amount);
+}
+```
 
 ### Interface segregation
 
