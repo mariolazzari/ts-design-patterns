@@ -363,6 +363,46 @@ Do not add methods to existing interface: create new interface.
 - Improve encapsulation
 - Reduced impact on changes
 
+```ts
+interface Printer {
+  print(doc: Document): void;
+}
+
+interface Scanner {
+  scan(doc: Document): void;
+}
+
+interface Fax {
+  fax(doc: Document): void;
+}
+
+class MultiFunctionPrinter implements Printer, Scanner, Fax {
+  print(doc: Document): void {
+    console.log("Print:", doc.title);
+  }
+
+  scan(doc: Document): void {
+    console.log("Scan:", doc.title);
+  }
+
+  fax(doc: Document): void {
+    console.log("Fax:", doc.title);
+  }
+}
+
+class SimplePrinter implements Printer {
+  print(doc: Document): void {
+    console.log("Print:", doc.title);
+  }
+}
+
+class FaxMachine implements Fax {
+  fax(doc: Document): void {
+    console.log("Sending fax", doc);
+  }
+}
+```
+
 ### Dependency inversion
 
 High level module should not depend on low level module.
@@ -371,6 +411,32 @@ Abstraction should not depends on detail.
 - Code reusability
 - Scalability
 - Decoupling
+
+```ts
+interface IDatabase {
+  save(data: string): string;
+}
+
+export class MySql implements IDatabase {
+  save(data: string): string {
+    return `${data} saved to MySQL`;
+  }
+}
+
+export class Mongo implements IDatabase {
+  save(data: string): string {
+    return `${data} saved to Mongo`;
+  }
+}
+
+export class HighLevelModule {
+  constructor(private db: IDatabase) {}
+
+  execute(data: string): string {
+    return this.db.save(data);
+  }
+}
+```
 
 ## Creational design patterns
 
@@ -546,3 +612,7 @@ Wrapper interface over a complex system. A single class (facade) with simplified
 ### Decorator
 
 ## Behavioural design patterns
+
+```
+
+```
